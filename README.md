@@ -1,2 +1,2 @@
-# website
+# adamingah.github.io.
 Adam Ingah Homepage
