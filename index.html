@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Title and Favicon -->
     <title>ADAMINGAH.COM</title>
-    <link rel="icon" type="images" href ="File.svg">
 
-    <!-- CSS file -->
-    <link rel = "stylesheet" href = "style.css"></link>
-
+    <link rel="icon" type="images" href="File.svg">
+    <link rel="stylesheet" href="index.css">
+   
 </head>
-
 
 <body>
 
-    <section>
-    <h1>ADAMINGAH.COM</h1>
-    <img src = "CMIYGL.png">
-    <p> A work in progress. Come back soon :) </p>
-    </section>
+  <div id="dragMe" class="icon draggable">
 
+    <img class="closed" src="file_closed.png" alt="red square">
+    
+    <a href = "home.html">  
+    <img src="file_open.png" alt="blue square" class="open">
+    </a>
+
+
+  </div>
+
+  <script src="drag.js"></script>
+  
+  </html>
 </body>
-</html>
