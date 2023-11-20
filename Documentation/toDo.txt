@@ -1,0 +1,26 @@
+ADAMINGAH.COM
+
+Features to include:
+    - File Explorer
+        1. Responsive where it translates down to mobile experiences well, as well 
+          scales up to larger browsers.
+        2. Files are bounded within the region defined by the host's web browser.
+        3. Files are open animated on hover, closed on drag.
+        
+    - Home page
+        1. Passport photo, fix responsiveness.
+        2. Basic information next to photo, make a square box or card greeting.
+        3. Skills section
+        4. Hobbies section
+        5. Interests section
+        6. HTML blog Link
+        7. Bottom Header with contact information
+
+    - File Organization
+        1. HTML Folder
+        2. CSS Folder
+        3. JS Folder
+        4. Server side Folder
+        5. Documentation
+        6. Images Folder
+    

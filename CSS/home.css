@@ -1,0 +1,67 @@
+/* Starting the .css file for my personal website */
+
+/* IMAGE */
+.container img{
+    padding: 8px;
+    height:auto;
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    max-width: 200px;
+}
+
+  .container p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px; /* adjust spacing as needed */
+  }
+
+.card p {
+    box-sizing: border-box;
+    text-align: justify;
+    
+}
+
+
+section{
+    border-radius: 1px;
+    background-color: #F5F5F5F5;
+    padding: 20px;
+    white-space: normal;
+    margin-top: 10px;
+    border-color: black;
+}
+
+h1{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+p{
+    margin-top: auto;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-left: 10px;
+
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #CFCFCF;
+    color: white;
+}
+ 
+header{
+text-align: center;
+font-family: 'Courier New', Courier, monospace;
+margin-bottom: 20px;
+
+}
+
