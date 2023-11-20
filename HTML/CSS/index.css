@@ -1,16 +1,13 @@
 /* Starting the .css file for my personal website */
 
 /* IMAGE */
-.container img{
+
+img{
     padding: 8px;
     height:auto;
     width: 50%;
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: auto;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    display: block; 
+    margin: auto;
     max-width: 200px;
 }
 
@@ -63,5 +60,10 @@ text-align: center;
 font-family: 'Courier New', Courier, monospace;
 margin-bottom: 20px;
 
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
