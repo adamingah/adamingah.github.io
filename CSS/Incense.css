@@ -7,24 +7,25 @@ body {
   background-color: white; /* Set your desired background color */
 }
 
-model-viewer {
-  width: 80%; /* Adjust the width as needed */
-  height: 80vh; /* Adjust the height as needed */
-  background-color: black;
-}
-
-/* Add this style for your h1 and pre elements */
 div {
   text-align: center;
   padding: 10px; /* Adjust the padding as needed */
 }
 
-.p {
-  font-family: 'Courier New', Courier, monospace;
+model-viewer {
+  width: 80%; /* Adjust the width as needed */
+  height: 80vh; /* Adjust the height as needed */
+  background-color: black;
+  max-width: 100%; /* Ensure the model-viewer doesn't exceed the viewport width */
+}
+
+/* Add this style for your h1 and pre elements */
+h1, pre {
   text-align: center;
-  padding: auto;
+  padding: 10px; /* Adjust the padding as needed */
 }
 
 img {
   width: 50%;
+  max-width: 100%; /* Ensure images don't exceed their container */
 }
