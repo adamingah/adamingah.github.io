@@ -4,10 +4,27 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f0f0f0; /* Set your desired background color */
+  background-color: white; /* Set your desired background color */
 }
 
 model-viewer {
   width: 80%; /* Adjust the width as needed */
   height: 80vh; /* Adjust the height as needed */
+  background-color: black;
+}
+
+/* Add this style for your h1 and pre elements */
+div {
+  text-align: center;
+  padding: 10px; /* Adjust the padding as needed */
+}
+
+.p {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  padding: auto;
+}
+
+img {
+  width: 50%;
 }
