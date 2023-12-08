@@ -10,11 +10,13 @@ body {
 div {
   text-align: center;
   padding: 10px; /* Adjust the padding as needed */
+  height: 100vh;
+  width: 90vw;
 }
 
 model-viewer {
-  width: 80%; /* Adjust the width as needed */
-  height: 80vh; /* Adjust the height as needed */
+  width: inherit; /* Adjust the width as needed */
+  height: inherit; /* Adjust the height as needed */
   background-color: black;
   max-width: 100%; /* Ensure the model-viewer doesn't exceed the viewport width */
 }
