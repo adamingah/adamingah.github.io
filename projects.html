@@ -4,54 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Projects</title>
+    <link rel="stylesheet" href="CSS/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .caret {
+            cursor: pointer;
+            user-select: none;
+        }
 
+        .caret::before {
+            content: "\f07b"; /* Font Awesome folder icon */
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: #FFA500;
+            display: inline-block;
+            margin-right: 6px;
+        }
+
+        .caret-down::before {
+            content: "\f07c"; /* Font Awesome open folder icon */
+        }
+
+        .nested {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
 <body>
     <div class="about-section">
         <h1>Projects</h1>
         <p>Some projects that I am working on currently.</p>
-        <p></p>
-      </div>
-      
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <div class="container">
-              <h2>Low Vision Magnifier</h2>
-              <p class="title">2023</p>
-              <p>Low vision magnifier for individuals with trouble seeing/reading text. Built using
-                Rasberry Pi 4, Python’s OpenCV library, Tesseract Library, and 3D printed parts</p>
-              <p><a href="LowVisionMagnifier.html">Link</a></p>
-            </div>
-          </div>
-        </div>
+    </div>
 
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <div class="container">
-              <h2>Stick Incense Holder</h2>
-              <p class="title">2023</p>
-              <p>Simple incence stick holder designed by me in Fusion 360</p>
-              <p><a href="incense.html">Link</a></p>
-            </div>
-          </div>
-        </div>
+    <ul id="myUL">
+        <li><span class="caret">2023</span>
+            <ul class="nested">
+                <li><span class="caret">Low Vision Magnifier</span>
+                    <ul class="nested">
+                        <li>Low vision magnifier for individuals with trouble seeing/reading text. Built using
+                            Raspberry Pi 4, Python’s OpenCV library, Tesseract Library, and 3D printed parts</li>
+                        <li><a href="LowVisionMagnifier.html">Link</a></li>
+                    </ul>
+                </li>
+                <li><span class="caret">Stick Incense Holder</span>
+                    <ul class="nested">
+                        <li>Simple incense stick holder designed by me in Fusion 360</li>
+                        <li><a href="incense.html">Link</a></li>
+                    </ul>
+                </li>
+                <li><span class="caret">Work in Progress</span>
+                    <ul class="nested">
+                        <li>Work in Progress</li>
+                        <li><a href="#">Work In Progress</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
 
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <div class="container">
-              <h2>Work in Progress</h2>
-              <p class="title">2023</p>
-              <p>Work in Progress</p>
-              <p><a href="">Work In Progress </a></p>
-            </div>
-          </div>
-        </div>
-      
-       
-      <link rel = "stylesheet" href ="CSS/projects.css"></link>
+    <script>
+        var toggler = document.getElementsByClassName("caret");
+        for (var i = 0; i < toggler.length; i++) {
+            toggler[i].addEventListener("click", function() {
+                this.parentElement.querySelector(".nested").classList.toggle("active");
+                this.classList.toggle("caret-down");
+            });
+        }
+    </script>
 </body>
 </html>
