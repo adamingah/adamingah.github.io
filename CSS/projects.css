@@ -3,6 +3,11 @@ ul {
   padding-left: 20px; /* Indentation for nested items */
 }
 
+body {
+  background-color: white;
+  
+}
+
 .caret {
   cursor: pointer;
   user-select: none;
