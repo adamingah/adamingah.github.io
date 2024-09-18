@@ -3,6 +3,14 @@ header {
     text-align: center;
     margin: 10%;
 }
+
+.header-link {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Ensures the color matches the rest of the header */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering */
+}
+
+
 body{
     font-family: 'Courier New', Courier, monospace;
     text-align: left;
