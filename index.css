@@ -45,3 +45,26 @@ footer p {
 .social-media a:hover {
     color: #ffa500; /* Change color on hover */
 }
+
+.hover-image-text {
+    position: relative;
+    text-decoration: underline;
+    cursor: pointer; /* Optional: change cursor to pointer */
+    color: #0000ff; /* Optional: change text color */
+}
+
+.hover-image {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%; /* Position below the text */
+    left: 0;
+    width: 200px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Ensure it appears above other elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow */
+    border: 1px solid #ccc; /* Optional: add a border */
+}
+
+.hover-image-text:hover .hover-image {
+    display: block; /* Show the image on hover */
+}

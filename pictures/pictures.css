@@ -3,16 +3,55 @@ header {
     text-align: center;
     margin: 10%;
 }
+
 .header-link {
     text-decoration: none; /* Removes the underline */
     color: inherit; /* Ensures the color matches the rest of the header */
     cursor: pointer; /* Changes the cursor to a pointer when hovering */
 }
 
-body{
+body {
     font-family: 'Courier New', Courier, monospace;
     text-align: left;
     margin: 10%;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
 }
 
 header h1 {
@@ -45,11 +84,7 @@ header p {
     border-radius: 8px;
 }
 
-.caption {
-    margin-top: 10px;
-    font-size: 1.1rem;
-    color: #555;
-}
+
 
 footer {
     font-family: 'Courier New', Courier, monospace;
